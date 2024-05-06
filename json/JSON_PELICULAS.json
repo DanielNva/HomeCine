@@ -1,0 +1,403 @@
+Array
+(
+    [dates] => Array
+        (
+            [maximum] => 2024-05-08
+            [minimum] => 2024-03-27
+        )
+
+    [page] => 1
+    [results] => Array
+        (
+            [0] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => /v5XyXZe8FADw8iHupB4L7QOAwH9.jpg
+                    [genre_ids] => Array
+                        (
+                            [0] => 16
+                            [1] => 35
+                            [2] => 10751
+                        )
+
+                    [id] => 748783
+                    [original_language] => en
+                    [original_title] => The Garfield Movie
+                    [overview] => El mundialmente famoso Garfield, el gato casero que odia los lunes y que adora la lasaña, está a punto de vivir una aventura ¡en el salvaje mundo exterior! Tras una inesperada reunión con su largamente perdido padre – el desaliñado gato callejero Vic – Garfield y su amigo canino Odie se ven forzados a abandonar sus perfectas y consentidas vidas al unirse a Vic en un hilarante y muy arriesgado atraco.
+                    [popularity] => 1091.629
+                    [poster_path] => /6QR2FOCQr41gSduN70WulRIhJb7.jpg
+                    [release_date] => 2024-05-01
+                    [title] => Garfield: La película
+                    [video] => 
+                    [vote_average] => 6.3
+                    [vote_count] => 34
+                )
+
+            [1] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => /uv2twFGMk2qBdyJBJAVcrpRtSa9.jpg
+                    [genre_ids] => Array
+                        (
+                            [0] => 10752
+                            [1] => 28
+                            [2] => 18
+                        )
+
+                    [id] => 929590
+                    [original_language] => en
+                    [original_title] => Civil War
+                    [overview] => En un futuro cercano donde América está sumida en una cruenta guerra civil, un equipo de periodistas y fotógrafos de guerra emprenderá un viaje por carretera en dirección a Washington DC. Su misión: llegar antes de que las fuerzas rebeldes asalten la Casa Blanca y arrebaten el control al presidente de los Estados Unidos.
+                    [popularity] => 592.01
+                    [poster_path] => /qDU7PMMVMxtFI5w95mXS3BjpODG.jpg
+                    [release_date] => 2024-04-18
+                    [title] => Civil War
+                    [video] => 
+                    [vote_average] => 7.414
+                    [vote_count] => 591
+                )
+
+            [2] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => /bxmiZSQhQ581Y3vbEgpTtmEjt67.jpg
+                    [genre_ids] => Array
+                        (
+                            [0] => 18
+                            [1] => 10749
+                        )
+
+                    [id] => 937287
+                    [original_language] => en
+                    [original_title] => Challengers
+                    [overview] => Casada con un campeón con una mala racha de derrotas, la estrategia de Tashi para la redención de su marido da un giro sorprendente cuando éste debe enfrentarse a Patrick - su antiguo mejor amigo y ex novio de Tashi. A medida que sus pasados y presentes chocan, y las tensiones se disparan, Tashi debe preguntarse a sí misma cuánto le costará ganar.
+                    [popularity] => 361.793
+                    [poster_path] => /Aiqfn4XtXUPr7QNsDsAKNQ1aOKV.jpg
+                    [release_date] => 2024-04-25
+                    [title] => Rivales
+                    [video] => 
+                    [vote_average] => 7.441
+                    [vote_count] => 376
+                )
+
+            [3] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => /5cCfqeUH2f5Gnu7Lh9xepY9TB6x.jpg
+                    [genre_ids] => Array
+                        (
+                            [0] => 14
+                            [1] => 12
+                            [2] => 35
+                        )
+
+                    [id] => 967847
+                    [original_language] => en
+                    [original_title] => Ghostbusters: Frozen Empire
+                    [overview] => Después de los eventos de Oklahoma, el equipo de Cazafantasmas regresa a donde comenzó todo: ¡Nueva York! La historia de la familia Spengler continúa con un nuevo grupo de Cazafantasmas.
+                    [popularity] => 330.022
+                    [poster_path] => /fIUqk6Pjo3uf5RiOGT19KQ53ekq.jpg
+                    [release_date] => 2024-04-11
+                    [title] => Cazafantasmas: Imperio helado
+                    [video] => 
+                    [vote_average] => 6.405
+                    [vote_count] => 375
+                )
+
+            [4] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => /zVDJ4cRgSpHlILSm7kGiklHQ6O7.jpg
+                    [genre_ids] => Array
+                        (
+                            [0] => 16
+                            [1] => 35
+                            [2] => 12
+                            [3] => 28
+                        )
+
+                    [id] => 1062807
+                    [original_language] => ja
+                    [original_title] => 劇場版 SPY×FAMILY CODE: White
+                    [overview] => Él es un espía. Ella es una asesina. Juntos, Loid y Yor se guardan su doble vida para sí mismos mientras pretenden ser la familia perfecta. Sin embargo, su hija adoptiva Anya, una telépata, conoce apasionantes secretos de ambos sin que ellos lo sepan. Con el pretexto de llevar a su familia a una escapada de fin de semana invernal, el intento de Loid de avanzar en su misión actual, la Operación Strix, resulta difícil cuando Anya se involucra por error y desencadena eventos que amenazan la paz mundial.
+                    [popularity] => 198.846
+                    [poster_path] => /jfjW3mQiCTL001ZVfUQ8bQ19zTD.jpg
+                    [release_date] => 2024-04-25
+                    [title] => Spy x Family Código: Blanco
+                    [video] => 
+                    [vote_average] => 7.789
+                    [vote_count] => 64
+                )
+
+            [5] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => /cnQI1M057kW0MHTmkQY4VeT6eCe.jpg
+                    [genre_ids] => Array
+                        (
+                            [0] => 28
+                            [1] => 53
+                            [2] => 80
+                        )
+
+                    [id] => 882059
+                    [original_language] => en
+                    [original_title] => Boy Kills World
+                    [overview] => Boy (Bill Skarsgård) es un joven que deberá enfrentarse a la desquiciada matriarca de una corrupta dinastía postapocalíptica que lo dejó huérfano, sordo y sin voz. Tras vivir una trágica infancia, un enigmático chamán (Yayan Ruhian) le convertirá en un instrumento de venganza y lo soltará en su lejana distopía en vísperas de la matanza anual de disidentes. Intentando encontrar su lugar, Boy se unirá a un grupo de resistencia a la vez que mantendrá intensas discusiones con el fantasma de su rebelde hermana pequeña.
+                    [popularity] => 85.015
+                    [poster_path] => /2TIz7cpjEOWO51PjF6twWJFJnLw.jpg
+                    [release_date] => 2024-05-02
+                    [title] => Boy Kills World
+                    [video] => 
+                    [vote_average] => 6.4
+                    [vote_count] => 20
+                )
+
+            [6] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => /bwj3rK2hc65eLwaQWUpendaphlE.jpg
+                    [genre_ids] => Array
+                        (
+                            [0] => 99
+                        )
+
+                    [id] => 1280368
+                    [original_language] => es
+                    [original_title] => Operación Esperanza: Los niños perdidos en el Amazonas
+                    [overview] => Narra lo acontecido el 1 de mayo de 2023, cuando cuatro niños estaban a bordo de un pequeño avión que se estrelló en lo profundo del Amazonas. Los niños no solo sobrevivieron al accidente, sino que pasaron 40 días solos en la selva hasta que finalmente fueron rescatados el 9 de junio.
+                    [popularity] => 28.93
+                    [poster_path] => /uBOS7RbRFmEkXQ98drgL9H4jjXc.jpg
+                    [release_date] => 2024-04-26
+                    [title] => Operación Esperanza: Los niños perdidos en el Amazonas
+                    [video] => 
+                    [vote_average] => 9.6
+                    [vote_count] => 10
+                )
+
+            [7] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => /77zk50tqzTOSj28t6CrHp5KGc5F.jpg
+                    [genre_ids] => Array
+                        (
+                            [0] => 18
+                            [1] => 35
+                        )
+
+                    [id] => 1105382
+                    [original_language] => es
+                    [original_title] => La Suprema
+                    [overview] => 
+                    [popularity] => 12.555
+                    [poster_path] => /rKegF51sPrwFdQvwbRxiGF0eL9U.jpg
+                    [release_date] => 2024-05-02
+                    [title] => La Suprema
+                    [video] => 
+                    [vote_average] => 0
+                    [vote_count] => 0
+                )
+
+            [8] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => 
+                    [genre_ids] => Array
+                        (
+                            [0] => 878
+                            [1] => 18
+                        )
+
+                    [id] => 1279310
+                    [original_language] => es
+                    [original_title] => 40 días perdidos en la selva
+                    [overview] => 
+                    [popularity] => 7.589
+                    [poster_path] => /9ByWI7ressU9JwidkImepGmZcVV.jpg
+                    [release_date] => 2024-04-25
+                    [title] => 40 días perdidos en la selva
+                    [video] => 
+                    [vote_average] => 0
+                    [vote_count] => 0
+                )
+
+            [9] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => 
+                    [genre_ids] => Array
+                        (
+                        )
+
+                    [id] => 1275120
+                    [original_language] => es
+                    [original_title] => Código abierto
+                    [overview] => 
+                    [popularity] => 9.636
+                    [poster_path] => 
+                    [release_date] => 2024-05-02
+                    [title] => Código abierto
+                    [video] => 
+                    [vote_average] => 0
+                    [vote_count] => 0
+                )
+
+            [10] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => 
+                    [genre_ids] => Array
+                        (
+                            [0] => 18
+                        )
+
+                    [id] => 1264502
+                    [original_language] => es
+                    [original_title] => Colibrí
+                    [overview] => 
+                    [popularity] => 7.299
+                    [poster_path] => /9zy85lU1dsSbqLIj2b5feTPw1pr.jpg
+                    [release_date] => 2024-05-02
+                    [title] => Colibrí
+                    [video] => 
+                    [vote_average] => 0
+                    [vote_count] => 0
+                )
+
+            [11] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => /qd09px0NYGVneO0I2ZFi0yJSqA6.jpg
+                    [genre_ids] => Array
+                        (
+                            [0] => 10402
+                            [1] => 99
+                        )
+
+                    [id] => 1254724
+                    [original_language] => ko
+                    [original_title] => 슈가│어거스트 디 투어 ‘디-데이’ 더 무비
+                    [overview] => 
+                    [popularity] => 9.643
+                    [poster_path] => /mIPjKvEcHcdlWWIedf6iiaGpByL.jpg
+                    [release_date] => 2024-04-10
+                    [title] => 슈가│어거스트 디 투어 ‘디-데이’ 더 무비
+                    [video] => 
+                    [vote_average] => 7.2
+                    [vote_count] => 2
+                )
+
+            [12] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => 
+                    [genre_ids] => Array
+                        (
+                        )
+
+                    [id] => 1270331
+                    [original_language] => es
+                    [original_title] => El Titán
+                    [overview] => Elkin Ramírez, el exponente más importante del rock colombiano, lideró Kraken durante 32 años. El último disco de la banda fue grabado mientras Elkin combatía un tumor cerebral. ¡Se vive una vez para ser eternamente libre!
+                    [popularity] => 6.276
+                    [poster_path] => /yOuSmEnSL4QrU8Yn9Bqe3vRvDkf.jpg
+                    [release_date] => 2024-04-25
+                    [title] => El Titán
+                    [video] => 
+                    [vote_average] => 0
+                    [vote_count] => 0
+                )
+
+            [13] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => 
+                    [genre_ids] => Array
+                        (
+                            [0] => 18
+                            [1] => 878
+                        )
+
+                    [id] => 1276932
+                    [original_language] => es
+                    [original_title] => Inventario
+                    [overview] => 
+                    [popularity] => 4.292
+                    [poster_path] => /3cQTFa7ulBVzJWrp41Lcs3pFWwq.jpg
+                    [release_date] => 2024-04-18
+                    [title] => Inventario
+                    [video] => 
+                    [vote_average] => 6
+                    [vote_count] => 1
+                )
+
+            [14] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => /fDubQOBoIEup3z7rTHCfJ0dJbMg.jpg
+                    [genre_ids] => Array
+                        (
+                            [0] => 35
+                        )
+
+                    [id] => 1269799
+                    [original_language] => es
+                    [original_title] => Quiero que me mantengan
+                    [overview] => Mónica y José son dos jóvenes de barrio que, cansados de sus trabajos de medio pelo y de las presiones de la vida, deciden buscan alternativas para para mejorar su situación, es así como abandonan sus empleos y se aventuran a montar su propio negocio, pero el emprendimiento no les funciona y terminan quebrados.
+                    [popularity] => 4.25
+                    [poster_path] => /au0mVA8zl42fmtvmlU9Sh3V1jBq.jpg
+                    [release_date] => 2024-04-05
+                    [title] => Quiero que me mantengan
+                    [video] => 
+                    [vote_average] => 0
+                    [vote_count] => 0
+                )
+
+            [15] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => 
+                    [genre_ids] => Array
+                        (
+                        )
+
+                    [id] => 1270308
+                    [original_language] => es
+                    [original_title] => Diamantes y caracoles (El experimento)
+                    [overview] => Una voz infantil y robótica enumera diferentes aventuras junto a sus particulares mascotas: caracoles. Como si se tratara de un informe científico, lo real y lo fantástico se fusionan en esta historia singular.
+                    [popularity] => 2.672
+                    [poster_path] => /uBgs6rt75veSKcY8YShDI0OQCDH.jpg
+                    [release_date] => 2024-04-21
+                    [title] => Diamonds & Snails (The Experiment)
+                    [video] => 
+                    [vote_average] => 0
+                    [vote_count] => 0
+                )
+
+            [16] => Array
+                (
+                    [adult] => 
+                    [backdrop_path] => 
+                    [genre_ids] => Array
+                        (
+                        )
+
+                    [id] => 1281479
+                    [original_language] => es
+                    [original_title] => The Cowboy
+                    [overview] => 
+                    [popularity] => 1.512
+                    [poster_path] => 
+                    [release_date] => 2024-04-16
+                    [title] => The Cowboy
+                    [video] => 
+                    [vote_average] => 0
+                    [vote_count] => 0
+                )
+
+        )
+
+    [total_pages] => 1
+    [total_results] => 17
+)
+    
