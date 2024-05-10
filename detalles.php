@@ -1,4 +1,8 @@
 <?php
+session_start();
+$_SESSION["n1"] = rand(1, 9);
+$_SESSION["n2"] = rand(1, 9);
+
 if (isset($_GET['id']) && is_numeric(($_GET['id']))) {
     $id = $_GET['id'];
     $ch = curl_init();
@@ -37,21 +41,46 @@ if (isset($_GET['id']) && is_numeric(($_GET['id']))) {
 <body>
     <nav><a href="index.php">Volver</a></nav>
     <div class="pelicula">
-        <h1><?php echo $array["title"]; ?></h1>
-        <h2><?php echo $array["tagline"] ?></h2>
-        <p>
-            <img src="https://image.tmdb.org/t/p/w500/<?php echo $array['poster_path']; ?>" alt="">
-            <?php echo $array["overview"] ?>
-        </p>
-        <ul>
+        <div>
+            <h1><?php echo $array["title"]; ?></h1>
+            <h2><?php echo $array["tagline"]; ?></h2>
+            <p>
+                <img src="https://image.tmdb.org/t/p/w500/<?php echo $array['poster_path']; ?>" alt="">
+                <?php echo $array["overview"]; ?>
+            </p>
+            <ul>
+                <?php
+                foreach ($array['genres'] as $key => $value) {
+                    echo "<li>" . $value['name'] . "</li>";
+                }
+                ?>
+            </ul>
+            <p><a href="<?php echo $array["homepage"]; ?>">Mas informacion</a></p>
+        </div>
+        <div>Comentarios sobre la pelicula <?php echo $array["title"]; ?></div>
+        <form action="Guardar.php" method="POST">
+            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <textarea name="comentario" placeholder="Comentarios ..." required></textarea>
+            <input type="text" name="nombre" placeholder="Su Nombre: ">
+            <input type="email" name="mail" placeholder="Su Correo: ">
+            <input type="number" name="seguridad" placeholder="<?php echo $_SESSION["n1"] . " + " . $_SESSION["n2"] ?>" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <ul id="comentarios">
             <?php
-            foreach ($array['genres'] as $key => $value) {
-                echo "<li>" . $value['name'] . "</li>";
+            $comentarios = [];
+            $ruta = "./comentarios/{$_GET['id']}.txt";
+            if (file_exists($ruta)) {
+                $comentarios = unserialize(file_get_contents($ruta));
+            }
+            if ($comentarios != "" && count($comentarios)) {
+                foreach ($comentarios as $key => $value) {
+                    echo "<li><p>{$value[0]}</p><p><strong>{$value[1]}</strong>, {$value[3]}</p></li>";
+                }
             }
             ?>
         </ul>
-        <p><a href="<?php echo $array["homepage"] ?>">Mas informacion</a></p>
-
+        <h2>Trailes</h2>
         <ul id="video">
             <?php
             if (isset($array['videos']['results']) > 0) {
@@ -59,6 +88,7 @@ if (isset($_GET['id']) && is_numeric(($_GET['id']))) {
                     if ($value['site'] == "YouTube") {
                         echo "<li><h3>" . $value['name'] . "</h3>";
             ?>
+
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $value['key'] ?>" title="<?php echo $value['name'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <?php
                         echo "</li>";
@@ -67,11 +97,6 @@ if (isset($_GET['id']) && is_numeric(($_GET['id']))) {
             }
             ?>
         </ul>
-
-        <?php
-        echo "<pre>";
-        print_r($array);
-        ?>
     </div>
 </body>
 
