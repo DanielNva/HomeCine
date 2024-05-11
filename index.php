@@ -29,12 +29,16 @@
             echo 'Error:' . curl_error($ch);
         }
         curl_close($ch);
+
+        /* Imprimir un array en formato JSON de la API */
         /* echo "<pre>";
         print_r($array); */
 
         echo "<ul>";
+        /* recorrido para validar la imagen con respecto a la pelicula */
         foreach ($array['results'] as $key => $value) {
             echo '<li>
+                <strong><a href="bd/conexion.php">Ir a conexion</a></strong>
                 <a href="detalles.php?id=' . $value["id"] . '">
                 <p><img src="https://image.tmdb.org/t/p/w500/' . $value['poster_path'] . '"></p>
                 </a>
