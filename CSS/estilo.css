@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(blue, black);
+    font-family: Times New Roman;
+    color: white;
+    padding: 40px;
+}
+body nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+#cartelera {
+    padding: 20px;
+}
+
+#cartelera ul {
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 45px;
+    list-style: none;
+}
+
+#cartelera ul li {
+    border-radius: 8px;
+    padding: 0px;
+    margin: 0px;
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+#cartelera ul li img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#cartelera ul li h2 {
+    color: gray;
+}
+
+
+.video-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#video {
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    list-style: none;
+    padding-top: 10px;
+}
+
+h2{
+    color: gray;
+    background-color: transparent;
+    padding: 10px;
+}
+
+#video li {
+    border-radius: 8px;
+    padding: 0px;
+    margin: 0px;
+    background: white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+#video li h2 {
+    color: gray;
+}
+
+#video li iframe{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#general{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 25px ;
+    gap: 15px;
+}
+#general img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+form{
+    background-color: rgb(43, 42, 42);
+    padding: 15px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+form textarea{
+    height: 100px;
+    width: 100%;
+    border: 1px solid white;
+    font-size: 1.2em;
+}
+form input{
+    width: 90%;
+    margin-top: 6px;
+    padding: 4px;
+    font-size: 1.2em;
+    border: 1px solid white;
+}
+
+form button{
+    background-color: black;
+    color: white;
+    border: 0px;
+    padding: 7px;
+    margin: 7px;
+}
+
+#comentarios{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    padding: 25px;
+    background-color: rgb(43, 42, 42);
+    border-radius: 0px 0px 8px 8px;
+    border-top: 1px solid black;
+}
+
+#comentarios li{
+    border: 1px solid gray;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 10px;
+}
+
+.deta ul{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.deta p{
+    margin: 0px;
+    padding: 5px;
+}
+
+.buscar{
+    background-color: rgb(27, 25, 25);
+    width: 300px;
+    margin: 0 auto;
+    padding: 7px 0px 10px 30px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.buscar input{
+    font-size: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.container-top{
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3em;
+}
+.container-top a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+}

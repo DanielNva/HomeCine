@@ -1,0 +1,105 @@
+/* estilocrud.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(blue, black);
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#regresar {
+    margin-bottom: 20px;
+}
+
+#regresar a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+#acciones {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="submit"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor de películas */
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Detalle de cada película */
+.detalle-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.detalle-container li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.detalle-container img {
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.detalle-container form {
+    margin-right: 10px;
+}
+
+.detalle-container input[type="text"] {
+    width: 200px;
+}
+
+.detalle-container .actualizar {
+    background-color: #28a745;
+    color: #fff;
+    margin-left: 10px;
+    display: flex;
+}
+
+.detalle-container .actualizar:hover {
+    background-color: #218838;
+}
+
+.detalle-container .eliminar {
+    color: #fff;
+    margin-left: 0px;
+    padding-top: 430px;
+    padding-right: 100px;
+    display: flex;
+}
+
+
