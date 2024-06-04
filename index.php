@@ -8,6 +8,15 @@
 </head>
 
 <body>
+
+    <div class="video content">
+        <div class="video-content">
+            <div class="video">
+                <video src="video/3129576-uhd_3840_2160_30fps.mp4" autoplay loop></video>
+            </div>
+        </div>
+    </div>
+        
     <div class="container-top">    
         <a href="index.php">Inicio</a>
         <a href="CRUD/crud.php">CRUD</a>
@@ -19,6 +28,7 @@
             <input type="submit" value="Buscar">
         </form>
     </div>
+    
     <div id="cartelera">
         <ul>
             <?php

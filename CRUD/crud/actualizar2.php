@@ -3,7 +3,7 @@
 include "../../bd/conexion.php"; // Incluir la conexión a la base de datos
 include "../../models/response.php";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "PUT") {
     $id = $_POST['id'];
     $title = $_POST['title'];
     $poster_path = $_POST['poster_path'];

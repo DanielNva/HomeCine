@@ -1,9 +1,8 @@
-
 <?php
 include "../../bd/conexion.php"; // Incluir la conexión a la base de datos
 include "../../models/response.php";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "DELETE") {
     $id = $_POST['id'];
 
     header('Content-Type: application/json');
@@ -12,22 +11,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $conn->prepare($sql);
 
     if (!$stmt) {
-        die("Error en la preparación de la consulta: " . $conn->error);
+        $miObjeto = new Response("Error en la preparación de la consulta: " . $conn->error, 500, false);
+        echo json_encode($miObjeto);
+        exit();
     }
 
     $stmt->bind_param("i", $id);
 
     if ($stmt->execute()) {
-        $miObjeto = new Response("se elimino la pelicula", 200, true);
+        $miObjeto = new Response("Se eliminó la película", 200, true);
         echo json_encode($miObjeto);
     } else {
-        $miObjeto = new Response("error al eliminar la pelicula", 404, false);
+        $miObjeto = new Response("Error al eliminar la película", 404, false);
         echo json_encode($miObjeto);
     }
 
     $stmt->close();
     $conn->close();
+    
+    // Redirigir después de todas las operaciones
     header("Location: ../crud.php"); // Redirect to crud.php
     exit();
 }
-?>
+

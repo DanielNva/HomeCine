@@ -63,7 +63,9 @@ if (isset($_GET['id']) && is_numeric(($_GET['id']))) {
             </div>
         </section>
     </div>
-    <div><h2>Comentarios sobre la pelicula <?php echo $array["title"]; ?></h2></div>
+    <div>
+        <h2>Comentarios sobre la pelicula <?php echo $array["title"]; ?></h2>
+    </div>
     <form action="SaveComment.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <textarea name="comentario" placeholder="Comentarios ..." required></textarea>
@@ -94,15 +96,7 @@ if (isset($_GET['id']) && is_numeric(($_GET['id']))) {
                 if ($value['site'] == "YouTube") {
                     echo "<li><h3>" . $value['name'] . "</h3>";
         ?>
-                    <div class="movie-slide">
-                        <div class="video-container">
-                            <ul class="video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $value['key'] ?>" title="<?php echo $value['name'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </ul>
-                            <button id="anterior">Anterior</button>
-                            <button id="siguiente">Siguiente</button>
-                        </div>
-                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $value['key'] ?>" title="<?php echo $value['name'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <?php
                     echo "</li>";
                 }

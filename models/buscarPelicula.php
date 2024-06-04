@@ -1,14 +1,23 @@
 <?php
-include "./bd/conexion.php";
+include_once "./bd/conexion.php";
 include_once "./controllers/buscarPelicula.php";
 
-$stmt = $conn->prepare("SELECT id, title, poster_path, vote_average FROM peliculas");
-
-// Verificar si hubo algún error al preparar la consulta
-if ($stmt === false) {
-    echo "Error al preparar la consulta: " . $conn->error;
-    exit;
+$searchQuery = '';
+if (isset($_GET['q'])) {
+    $searchQuery = $_GET['q'];
 }
+
+// Buscar las películas en la base de datos según el término de búsqueda
+$sql = "SELECT id, title, poster_path, vote_average FROM peliculas WHERE title LIKE ?";
+$stmt = $conn->prepare($sql);
+
+// Manejar posibles errores en la preparación de la consulta
+if (!$stmt) {
+    die("Error en la preparación de la consulta: " . $conn->error);
+}
+
+$searchTerm = '%' . $searchQuery . '%';
+$stmt->bind_param("s", $searchTerm);
 
 // Ejecutar la consulta y manejar posibles errores en la ejecución
 if ($stmt->execute()) {

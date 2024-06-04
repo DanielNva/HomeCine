@@ -49,7 +49,9 @@ require '../controllers/buscarPelicula.php';
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 echo '<div class="detalle-container">
+                <td>
                     <li>
+                    <div class="conten">
                     <form action="crud/actualizar.php" method="post">
                         <input type="hidden" name="id" value="' . htmlspecialchars($row["id"]) . '">
                         <input type="text" name="title" value="' . htmlspecialchars($row["title"]) . '" required>
@@ -57,11 +59,13 @@ require '../controllers/buscarPelicula.php';
                         <input type="text" name="vote_average" value="' . htmlspecialchars($row["vote_average"]) . '" required>
                         <input type="submit" value="Actualizar" class="actualizar">
                     </form>
+                    </div>
                     <form action="crud/eliminar.php" method="post" class="eliminar">
                         <input type="hidden" name="id" value="' . htmlspecialchars($row["id"]) . '">
                         <input type="submit" value="Eliminar" >
                     </form>
                 </li>
+                </td>
                 </div>';
             }
         } else {
