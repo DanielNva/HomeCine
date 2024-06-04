@@ -25,14 +25,17 @@ const CargarPeliculas = async () => {
       datos.results.forEach((pelicula) => {
         peliculas += `
         <div class="pelicula" id="${pelicula.id}">
-            <a href="detalle_pelicula.html?id=${pelicula.id}"><img class="poster"  src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"></a>
+            <a href="detalle_pelicula.html?id=${pelicula.id}">
+                <img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
+            </a>
+            <div class="titulo">
+                <h3>${pelicula.title}</h3>
+                <p>✨${pelicula.vote_average}</p>
+            </div>
         </div>
-        <h3 class="titulo"> ${pelicula.title}
-        <p>⭐${pelicula.vote_average}⭐</p>
-        </h3>
-         `;
-      });
-      document.getElementById("contenedor").innerHTML = peliculas;
+        `;
+    });
+    document.getElementById("contenedor").innerHTML = peliculas;
 
       // Agregar evento de clic a cada póster de película
       const posters = document.querySelectorAll('.pelicula');

@@ -104,11 +104,17 @@ const crearPelicula = async () => {
       })
     });
 
+    if (!response.ok) {
+      throw new Error('Error al crear la película: ' + response.statusText);
+    }
+
     const data = await response.json();
     alert('Película creada:', data);
   } catch (error) {
     console.error('Error al crear la película:', error);
+    alert('Hubo un error al crear la película. Por favor, intenta nuevamente más tarde.');
   }
 };
+
 
 CargarListado()

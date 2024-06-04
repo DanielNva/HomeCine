@@ -4,38 +4,42 @@
 <header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CINECALIDAD </title>
+    <title> HOME CINE </title>
     <link rel="stylesheet" href="./Styles/Estilo.css">
-    <link rel="stylesheet" href="./Styles/crudUsuario.css">
-    <title>CINECALIDAD--UNIREMINGTON</title>
+    <link rel="stylesheet" href="Styles/crudUsuario.css">
 </header>
 
 <body>
+    <header class="header content">
+        <div class="header-video">
+            <video src="Video/142936-781314490.mp4" autoplay loop></video>
+            <div class="header-overlay"></div>
+        </div>
+    </header>
+    <div class="header-content">
+
+    <div>
+        <h1>Home Cine</h1>
+    </div>
+
     <nav>
         <ul>
             <li><a href="#" onclick="mostrarSeccion('PELICULAS')">PELICULAS📺</a></li>
             <li><a href="#" onclick="mostrarSeccion('CONTACTANOS')">CRUD API_REST ✏️</a></li>
         </ul>
     </nav>
-
-    <section id="CONTACTANOS">
-        <div id="contenedor_api">
-
-        </div>
-
-    </section>
-
-
-
-    <section id="PELICULAS">
-
-        <div class="contenedor" id="contenedor"></div>
-
-        <div class="paginacion">
-        </div>
-
-
-    </section>
+        <section id="CONTACTANOS">
+            <div id="contenedor_api">
+            </div>
+        </section>
+        <section id="PELICULAS">
+            <div class="contenedor" id="contenedor"></div>
+            <div class="paginacion">
+                <div container>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="JS/main2.js"></script>
     <script src="JS/crud.js"></script>

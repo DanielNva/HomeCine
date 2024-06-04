@@ -1,7 +1,8 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reseteo de márgenes y rellenos */
+body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 .container {
   position: relative;
@@ -13,33 +14,47 @@ body {
 h1 {
   text-align: center;
   color: white;
-  background-image: url(../Image/fondo.jpg);
 }
 
 #detalles-pelicula {
-  background-image: url(../Image/fondo.jpg);
+  background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para mejor legibilidad */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contenedor img {
+  max-width: 40%; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  border-radius: 5px;
+  margin: 20px; /* Añade un espacio más amplio alrededor de la imagen */
 }
 
 h2 {
-  text-align: center;
-  padding-top: 10px 10px;
-  color: #ff0000;
+  text-align: left; /* Alinea el título a la izquierda */
+  color: #5a4f4f;
   font-size: 35px;
+  margin-bottom: 10px; /* Añade un espacio entre el título y los párrafos */
 }
 
 p {
-  text-align: center;
+  text-align: left; /* Alinea los párrafos a la izquierda */
   color: white;
   font-size: 18px;
-  height: auto;
+  margin-bottom: 10px; /* Añade un espacio entre los párrafos */
 }
 
+/* Estilos para el iframe */
 iframe {
   width: 100%;
-  height: 615px;
+  height: 315px;
   border: none;
   border-radius: 8px;
   margin-top: 20px;
@@ -49,7 +64,17 @@ img {
   max-width: 50%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: -100px 0px 0px;
+  padding-left: 10px;
+}
+
+.contenedor img {
+  float: right; /* Alinea la imagen a la derecha */
+  max-width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  border-radius: 5px;
+  margin-left: 0px; /* Añade un espacio entre la imagen y el texto */
+  margin-right: 150px;
 }
 
 .buttons {
@@ -67,19 +92,20 @@ img {
 }
 
 button {
+  display: relative;
   margin: 10px 0;
   padding: 10px;
   text-align: center;
   border-radius: 10px;
   height: 50px;
-  background: rgba(0, 255, 42, 0.918);
+  background: rgba(71, 67, 66, 0.918);
   color: white;
   font-size: 14px;
   font-family: Roboto;
 }
 
 button:hover {
-  background: white;
+  background: rgb(255, 255, 255);
   box-shadow: 0 0 20px black;
   color: #000000;
   cursor: pointer;
@@ -101,4 +127,53 @@ button:focus {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+}
+
+/* estilos.css */
+
+/* Establecer el tamaño del video como el de la ventana del navegador */
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hace que el video cubra todo el área del contenedor */
+  z-index: -1; /* Coloca el video detrás de todo el contenido */
+}
+
+/* Contenedor para el contenido */
+.content-container {
+  position: relative;
+  z-index: 1; /* Coloca el contenido sobre el video */
+  padding: 20px; /* Ejemplo de relleno para el contenido */
+}
+
+/* Estilos adicionales para el contenido */
+.content {
+  /* Agrega estilos adicionales para el contenido si es necesario */
+  padding: 10px; /* Ejemplo de relleno para el contenido */
+}
+
+/* Estilos para las películas */
+.pelicula {
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+.text-content {
+  max-width: 50%;
+  margin: 20px; /* Añade un espacio más amplio alrededor del texto */
+}
+
+div a{
+  margin-right: 200px;
+  padding-left: -400px;
+}
+
+div h2{
+  position: relative;
+  margin-right: 250px;
 }

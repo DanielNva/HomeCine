@@ -26,18 +26,23 @@ async function cargarDetallesPelicula(peliculaId) {
             );
 
             const detallesHTML = `
-                <a href="Principal.html"><button>⬅️ Back</button></a>
+                <head>
+                <title>ಥ${pelicula.title}ಥ</title>
+                </head>
+                <body>
+                <a href="Principal.html"><button>Back</button></a>
                 <h2>${pelicula.title}</h2>
                 <div class="contenedor">
                     <img src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" alt="${pelicula.title}">
                     </div>
                 <p>${pelicula.overview}</p>
                 <p>Fecha de lanzamiento: ${pelicula.release_date}</p>
-                <p> Calificacion: ⭐ ${pelicula.vote_average} ⭐</p>
+                <p> Calificacion: ${pelicula.vote_average} </p>
                 ${trailer
                     ? `<iframe width="560" height="315" src="https://www.youtube.com/embed/${trailer.key}" frameborder="0" allowfullscreen></iframe>`
                     : "<p>Tráiler no disponible.</p>"
                 }
+                </body>
             `;
 
             document.getElementById("detalles-pelicula").innerHTML = detallesHTML;
