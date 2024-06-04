@@ -1,0 +1,24 @@
+config:
+  target: 'http://localhost:1000'
+  phases:
+    - duration: 60
+      arrivalRate: 10
+scenarios:
+  - flow:
+      - get:
+          url: "/get"
+      - post:
+          url: "/post"
+          json:
+            titulo: "post de carga"
+            descripcion: "descripcion post carga"
+            votacion: 1
+      - put:
+          url: "/update/614933"
+          json:
+            titulo: "carga de put"
+            descripcion: "descripcion de put"
+            votacion: 1
+      - delete:
+          url: "/delete/660360"
+

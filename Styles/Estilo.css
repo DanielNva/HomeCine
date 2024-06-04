@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  body {
+    font-family:Roboto; 
+    background-image: url(../Image/fondo.jpg);
+    color: #ffffff;
+ 
+  }
+
+  body h1 {
+    color: #971c27;
+    width: 100%;
+    height: 60px;
+    background: #515151;
+    font-family: "Calibri, "Trebuchet MS",
+      sans-serif, Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+   
+  }
+
+  .contenedor .pelicula {
+    text-align: center;
+  }
+
+  .contenedor .pelicula .titulo {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .contenedor .pelicula .poster {
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+
+  .paginacion {
+    position: fixed;
+    bottom: 0;
+    background: #100a1f00;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+ 
+  }
+
+  .paginacion button {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 35px;
+    width: 200px;
+    background: #570e88;
+    color: #fff;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: 0.3s ease all;
+  }
+
+  .paginacion button:hover {
+    background: #000000;
+  }
+
+  .conte {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+
+  .conte .serie {
+    text-align: center;
+  }
+
+  .conte .serie .titulo {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .conte .series .poster {
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+
+  nav {
+    width: 100%;
+    height: 60px;
+    background-image: url(../Image/fondo.jpg);
+    align-items: center;
+    font-weight: bold;
+   
+  }
+
+  nav ul {
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 30px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    list-style-type: circle;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul li a,
+  nav ul li a:link,
+  nav ul li a:visited {
+    float: left;
+    width: 200px;
+    height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 20px;
+    border-radius: 30px;
+    padding-top: 5px;
+    background: #f5787a;
+  }
+
+  nav ul li a:hover {
+    color: #ffffff;
+    background: #000000;
+  }
+
+  nav ul li a:active {
+    color: #fff;
+    background: #6d08e0;
+  }
+}
